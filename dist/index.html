@@ -2,23 +2,51 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>Weather-App</title>
     </head>
     <body>
-        <div id = "content">
-            <header>
-                <div class="form-group">
-                    <input type="text" placeholder="Search city" />
-                    <button>Search</button>
-                    <br />
-                    <span class="error-msg">Location not found!</span>
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                    <div class="search-group col-12 mb-4 pt-4 pb-4 text-center">
+                        <input class="col-4" type="text" placeholder="Search city" />
+                        <button class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-1 btn-danger">Search</button>
+                    </div>
+                <div class="general-info col-12 mt-2 mb-4 pt-4 pb-2 text-center">
+                    <h2 class="location col-12 font-weight-bold"></h1>
+                    <h6 class="condition col-12"></h6>
+                    
                 </div>
-              </header>
+                <div class="temp col-12 text-center">
+                    <h1 class="degrees col-12"></h1>
+                </div>   
+                <div class="temp-min-max col-12 mb-5 pt-5 pb-5 text-center">
+                    <span class="min-max col-12"></span>  
+                </div>
+                <div class="details-info row mb-5 mt-5 pt-5 pb-5">
+                    <div class="sun-info row">
+                        <p class="sunrise col-4"></p>
+                        <p class="sunset col-4"></p>
+                    </div>
+                    <div class="weather-info row text-center">
+                        <p class="feels-like col-4"></p>
+                        <p class="windy col-4"></p>
+                        <p class="humidity col-4"></p>
+                    </div>
+                   
+                </div>
+                <div class = "project col-12 text-center mt-5 pt-5">This project is part of
+                    <a href="https://www.theodinproject.com">The Odin Project Curriculum</a>
+                    <p>Weather API courtesy of OpenWeather.</p>
+                </div>
+            </div>
         </div>
-        <p class = "project">This project is part of
-            <a href="https://www.theodinproject.com">The Odin Project Curriculum</a>
-        </p>
         <script src="main.js"></script>
     </body>
 </html>
+
+<!-- 
+                        <br />
+                        <span class="error-msg">Location not found!</span> --> 
